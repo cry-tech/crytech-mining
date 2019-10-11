@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1920px" height="1080px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 19200 10800"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:url(#id0)}
+    .fil0 {fill:url(#id1)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="9598.8" y1="10418.1" x2="9598.8" y2="530.9">
+   <stop offset="0" style="stop-opacity:1; stop-color:#F1E8FF"/>
+   <stop offset="0.690196" style="stop-opacity:1; stop-color:#FEFEFE"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FEFEFE"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="10800" y1="10418.1" x2="10800" y2="8970.7">
+   <stop offset="0" style="stop-opacity:1; stop-color:#F6F2FC"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FEFEFE"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M16912.1 10034.8c745.2,-466.4 1297,-1212.8 2286.7,-947.6 -735.1,920.5 -1016.9,1766 -2286.7,947.6zm-3223.3 -696.3c-791.3,428.9 -1603,1079.6 -2591.6,1079.6 -440.6,0 -854.5,-105.2 -1253,-250 958.2,-414.2 1777.9,-1197.4 2665.4,-1197.4 535.2,0 884.7,157.9 1179.2,367.8zm-7599.4 244.6c-1296.1,432.3 -2651.9,1207.2 -3319,356.9 735.7,-276.6 1513.3,-602 2190.4,-602 382.2,0 754.7,102.9 1128.6,245.1z"/>
+  <path class="fil1" d="M-1.2 530.9c6400,0 12800,0 19200,0 0,3028.5 0,5527.8 0,8556.3 -1407.3,-377 -1929.1,1291.2 -3380.7,1291.2 -1767.9,0 -1710,-1407.7 -3308.5,-1407.7 -1206.5,0 -2287.6,1447.4 -3761.9,1447.4 -1411.5,0 -2548.4,-1080.1 -3786.9,-1080.1 -2029.5,0 -4962,2924.2 -4962,-1309.1 0,-3028.5 0,-4469.5 0,-7498z"/>
+ </g>
+</svg>
