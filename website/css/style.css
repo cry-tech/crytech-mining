@@ -103,6 +103,7 @@ li {
 
 .fal, .fas, .far {
     font-family: 'Font Awesome 5 Pro' !important;
+    font-size: 1.3em;
 }
 .fab {
     font-family: 'Font Awesome 5 Brands' !important;
@@ -366,6 +367,10 @@ article:hover {
     top: -12px;
     left: -12px;
 }
+
+.s-team-member .fab{
+  font-size: 24px;
+}
 .s-footer:before {
 	content:'';
 	background:#865FF8;
@@ -391,11 +396,13 @@ article:hover {
     position: absolute;
     width: 96%;
     top: 50px;
+    z-index:3;
 }
 .s-promo-d2 {
     position: absolute;
     width: 96%;
     top: 50px;
+    z-index:3;
 }
 .s-promo-d3 {
     position: absolute;
@@ -409,6 +416,7 @@ article:hover {
 }
 .s-promo-txt {
     padding-top: 40px;
+    z-index:5;
 }
 .s-countdown-bg {
     border: 3px solid black;

@@ -1,795 +1,991 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <title></title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="author" content="Zhabiz Group">
-    <meta property="og:title" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="/img/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="image/png" />
-    <!-- Vendor Styles -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-    <!-- Theme Styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/font-awesome-5.css">
-    <link href="css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet"/>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  </head>
 
-  <body>
-    <!--========== HEADER ==========-->
-    <header class="navbar-fixed-top s-header-v2 js__header-sticky hidden-xs hidden-sm">
-      <!-- Navbar -->
-      <nav class="s-header-v2__navbar">
-          <div class="container-fluid">
-              <!-- Navbar Row -->
-              <div class="g-padding-x-100--lg g-padding-x-10--md row">
-                  <div class="col-md-8 s-header-v2__navbar-col g-padding-x-0--xs">
-                      <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
-                          <ul class="s-header-v2__nav g-padding-r-0--xs">
-                              <li class="s-header-v2__nav-item">
-                                  <a href="/" class="s-header-v2__nav-link">
-                                      <img class="g-width-130--xs s-header__logo-img-default g-position--absolute" style="padding-top: 5px;" src="img/HeaderLogo-default.svg" alt="">
-                                      <img class="g-width-130--xs s-header__logo-img-shrink" src="img/HeaderLogo-shrink.svg" alt="">    
-                                  </a>
-                              </li>
-                              <li class="s-header-v2__nav-item">
-                                  <a href="/" class="s-header-v2__nav-link">Home</a>
-                              </li>
-                              <li class="s-header-v2__nav-item">
-                                <a href="white-paper.pdf" class="s-header-v2__nav-link">White Paper</a>
-                              </li>
-                              <li class="s-header-v2__nav-item">
-                                  <a href="About.html" class="s-header-v2__nav-link">About</a>
-                              </li>
-                              <li class="s-header-v2__nav-item">
-                                  <a href="Contact.html" class="s-header-v2__nav-link">Contact</a>
-                              </li>
-                              <li class="s-header-v2__nav-item">
-                                  <a href="FAQ.html" class="s-header-v2__nav-link">FAQ</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-4 s-header-v2__navbar-col s-header-v2__navbar-col--right g-padding-x-0--xs">
-                      <ul class="s-header-v2__nav g-pull-right--xs">
-                          <li class="s-header-v2__nav-item">
-                              
-                          </li>
-                      </ul>
-                  </div>
-              </div>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="author" content="Zhabiz Group">
+  <meta property="og:title" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="/img/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="image/png" />
+  <!-- Vendor Styles -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <!-- Theme Styles -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/global/global.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome-5.css">
+  <link href="css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="navbar-fixed-top s-header-v2 js__header-sticky hidden-xs hidden-sm">
+    <!-- Navbar -->
+    <nav class="s-header-v2__navbar">
+      <div class="container-fluid">
+        <!-- Navbar Row -->
+        <div class="g-padding-x-100--lg g-padding-x-10--md row">
+          <div class="col-md-8 s-header-v2__navbar-col g-padding-x-0--xs">
+            <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+              <ul class="s-header-v2__nav g-padding-r-0--xs">
+                <li class="s-header-v2__nav-item">
+                  <a href="/" class="s-header-v2__nav-link">
+                    <img class="g-width-130--xs s-header__logo-img-default g-position--absolute"
+                      style="padding-top: 5px;" src="img/HeaderLogo-default.svg" alt="">
+                    <img class="g-width-130--xs s-header__logo-img-shrink" src="img/HeaderLogo-shrink.svg" alt="">
+                  </a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="/" class="s-header-v2__nav-link">Home</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="white-paper.pdf" class="s-header-v2__nav-link">White Paper</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="About.html" class="s-header-v2__nav-link">About</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="Contact.html" class="s-header-v2__nav-link">Contact</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="FAQ.html" class="s-header-v2__nav-link">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
-      </nav>
-      <!-- End Navbar -->
-    </header>
-    
-    <!-- header responsive -->
-    <div class="navbar-fixed-top hidden-md hidden-lg">
-      <div class="sidebar">
-        <div class="sidebar-wrapper g-bg-color--mobilemenu">
-          <div class="logo text-center" style="padding:12px 0px !important;">
-              <img class="g-width-130--xs" src="img/HeaderLogo-default.svg" alt="">
+          <div class="col-md-4 s-header-v2__navbar-col s-header-v2__navbar-col--right g-padding-x-0--xs">
+            <ul class="s-header-v2__nav g-pull-right--xs">
+              <li class="s-header-v2__nav-item">
+
+              </li>
+            </ul>
           </div>
-          <ul class="nav">
-              <li>
-                  <a href="/">
-                      <i class="fal fa-home-alt g-font-size-20--xs g-color--white"></i>
-                      <p class="g-font-size-14--xs g-color--white">Home</p>
-                  </a>
-              </li>              
-              <li>
-                  <a href="About.html">
-                      <i class="fal fa-info-circle g-font-size-20--xs g-color--white"></i>
-                      <p class="g-font-size-14--xs g-color--white">About</p>
-                  </a>
-              </li>
-              <li>
-                <a href="white-paper.pdf">
-                    <i class="fal fa-info-circle g-font-size-20--xs g-color--white"></i>
-                    <p class="g-font-size-14--xs g-color--white">White Paper</p>
-                </a>
-              </li>
-              <li>
-                  <a href="Contact.html">
-                      <i class="fal fa-headset g-font-size-20--xs g-color--white"></i>
-                      <p class="g-font-size-14--xs g-color--white">Contact</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="FAQ.html">
-                      <i class="fal fa-coins g-font-size-20--xs g-color--white"></i>
-                      <p class="g-font-size-14--xs g-color--white">FAQ</p>
-                  </a>
-              </li>
-          </ul> 
         </div>
       </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
 
-      <div class="main-panel">
-          <nav class="navbar g-bg-color--mobile-header navbar-fixed-top">
-              <div class="container-fluid">
-                <div class="row">
-                  
-                  <div class="col-xs-4 navbar-header g-pull-right--xs">
-                      <button dir="rtl" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                  </div>
-                                
-                  <div class="col-xs-8 text-left">
-                      <a href="/">
-                          <img class="g-width-100--xs g-margin-t-5--xs" src="img/HeaderLogo-shrink.svg" alt="">
-                      </a>
-                  </div>
-
-                  <div class="collapse navbar-collapse">
-                      <ul class="nav navbar-nav navbar-left">
-                          
-                      </ul>
-                  </div>
-              </div>
-            </div>
-          </nav>
-
+  <!-- header responsive -->
+  <div class="navbar-fixed-top hidden-md hidden-lg">
+    <div class="sidebar">
+      <div class="sidebar-wrapper g-bg-color--mobilemenu">
+        <div class="logo text-center" style="padding:12px 0px !important;">
+          <img class="g-width-130--xs" src="img/HeaderLogo-default.svg" alt="">
         </div>
+        <ul class="nav">
+          <li>
+            <a href="/">
+              <i class="fal fa-home-alt g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="About.html">
+              <i class="fal fa-info-circle g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">About</p>
+            </a>
+          </li>
+          <li>
+            <a href="white-paper.pdf">
+              <i class="fal fa-info-circle g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">White Paper</p>
+            </a>
+          </li>
+          <li>
+            <a href="Contact.html">
+              <i class="fal fa-headset g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">Contact</p>
+            </a>
+          </li>
+          <li>
+            <a href="FAQ.html">
+              <i class="fal fa-coins g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">FAQ</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!--========== END HEADER ==========-->
 
-    <!--========== Title Promo ==========-->
-    <section class="container-fluid g-padding-x-10--xs g-padding-y-80--md g-padding-y-50--xs items" id="js-scene">
-      <div class="items__inner hidden-xs hidden-sm">
-          <img src="img/Home/new-promo-d2.svg" class="s-promo-d1 layer wow slideInDown" data-depth="0.2" data-title="no.1">
-          <img src="img/Home/new-promo-d1.svg" class="s-promo-d2 layer wow slideInDown" data-depth="0.1" data-title="no.2" data-wow-delay="0.3s" data-wow-duration="1200ms">
-      </div>
-      <img src="img/Home/promo-d2.svg" class="s-promo-d1 hidden-md hidden-lg wow slideInDown">
-      <img src="img/Home/promo-d1.svg" class="s-promo-d2 hidden-md hidden-lg wow slideInDown" data-wow-delay="0.3s" data-wow-duration="1200ms">
-      
-      <div class="row text-center">
-        <div class='col-xs-12 col-md-6 s-promo-txt g-margin-b-10--xs g-padding-x-80--lg g-padding-x-50--md g-padding-x-15--xs wow fadeIn' data-wow-delay='0.1s'>
-            <div class="wow fadeIn" data-wow-delay="1s">
-              <h1 class="g-font-weight--700 g-margin-b-60--xs g-margin-b-10--sm g-color--white g-font-size-26--xs g-font-size-40--md g-font-size-50--lg">CryTech Mining</h1>
-              <p class="g-font-weight--700 g-font-size-22--lg g-font-size-18--md g-margin-b-30--xs">Contribution in the mining of profitable Cryptocurrencies, highly efficient and secure (for everyone)</p>
-              <p class="g-font-size-22--lg g-font-size-18--md">You acquire the token, we handle the labour, <br><strong>you take your profit</strong>.
-              <hr class="g-width-100--xs">
-              <p>Investment in mining has never been such easy</p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-6 g-margin-t-140--lg g-margin-t-100--md g-padding-r-180--lg g-padding-r-100--sm g-margin-b-30--xs wow fadeIn" data-wow-delay="1s">
-            <img src="img/Home/index-promo-1.svg" class="img-responsive g-margin--auto">
-        </div>
+    <div class="main-panel">
+      <nav class="navbar g-bg-color--mobile-header navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="row">
 
-        <div class="col-xs-12" style="background: url(img/Home/section-bg-bottom.svg) 50% 100% no-repeat;z-index: -1;">
-            <div class="hidden col-xs-12 col-md-6 col-md-offset-3 s-countdown-bg g-margin-t-80--md g-margin-t-170--lg g-margin-b-40--xs text-center wow fadeIn" data-wow-delay="1.5s">
-              <div class="s-countdownheader">
-                <h6 class="g-margin-b-0--xs">ICO Countdown :</h6>
-              </div>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Days">55</span>
-                <br>
-                <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Days</span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Hours"> 03</span>
-                <br>
-                <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Hours </span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Minutes"> 25</span>
-                <br>
-                <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Minutes </span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
-              </h3>
-              <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
-                <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Seconds"> 30</span>
-                <br>
-                <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Seconds </span>
-              </h3>
-            </div>
-<br> <br> <br><br><br> 
-            <div class="col-xs-12 g-padding-x-0--xs g-padding-x-15--sm g-margin-b-10--xs wow fadeIn">
-              <div class="col-md-6 g-padding-x-0--xs g-padding-x-15--sm col-md-offset-3">
-                <form action="" id="Form">
-                  <div class="input-group g-margin--auto">
-                    <input id="Email" type="email" class="form-control s-phone-number-input g-font-size-16--xs g-padding-x-20--xs" name="Email" placeholder="E-mail address">
-                    <div class="g-font-size-16--xs input-group-btn s-phone-number-btn">
-                      <button type="submit" class="s-phone-number-btn g-padding-x-20--sm g-padding-x-10--xs">put <span class="hidden-xs">me </span>on the <span class="hidden-xs">wait </span>list</button>
-                    </div> 
-                  </div>
-                  <div class="errorTxt text-center"></div>
-                </form>
-              </div>
+            <div class="col-xs-4 navbar-header g-pull-right--xs">
+              <button dir="rtl" type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
 
-            <div class="col-xs-12">
-              <p>(we will inform you before ICO and you will be prioritized)</p>
-            </div>
-            
-            <div class="col-xs-12 g-margin-b-100--xs wow fadeIn">
-      		  <div class="col-xs-12 col-md-6 col-md-offset-3 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md">
-      			<hr class="g-width-100--xs">
-      			<p> As soon as you obtain your token, you buy hashpower from our farms. You own the hashpower forever, as long as you hold the token.</p>
-      			<p>Each token equals 1 GigaHash of SHA256 algorithm - or equal amount of hashpower for other algorithms As long as you hold the token, you receive the regular profit distribution.</p>
-      			<p>You can also sell your tokens whenever you desire.</p>
-      		  </div>
+            <div class="col-xs-8 text-left">
+              <a href="/">
+                <img class="g-width-100--xs g-margin-t-5--xs" src="img/HeaderLogo-shrink.svg" alt="">
+              </a>
             </div>
 
-        </div>
-      </div>
-    </section>
-    <!--========== END Title Promo ==========-->
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-left">
 
-    <!--========== PAGE CONTENT ==========-->
-    <section class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
-
-      <div class="col-xs-12 g-margin-b-60--xs wow fadeIn">
-		    <div class="col-xs-12 col-sm-7 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md g-pull-right--sm">
-			   <h2 class="s-cry-title g-font-weight--700">Highly Profitable Investment</h2>
-			   <p>The price of electricity is the main factor in mining profitability. We have access to inexpensive electricity - 3 cents per kilowatt - that boosts the profitability </p>
-		    </div>
-		    <div class="col-xs-12 col-sm-5 g-padding-x-0--xs g-padding-x-15--sm">
-			   <img src="img/Home/feature1.svg" class="img-responsive g-margin--auto">
-		    </div>
-      </div>
-	  
-  	  <div class="col-xs-12 wow fadeIn">
-  		  <div class="col-xs-12 col-sm-7 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md">
-  			<h2 class="s-cry-title g-font-weight--700">Secure Investment</h2>
-  			<p>You rest assured that your budget directly goes into mining hardwares and your capital is actually swapped with physical devices that mine crypto-currencies </p>
-  			<p>The electricity we rely on is totally legitimate and legal. The government has officially declared mining as an industry. In addition to all that, we mine in multiple countries </p>
-  		  </div>
-  		  <div class="col-xs-12 col-sm-5 g-padding-x-0--xs g-padding-x-15--sm">
-  			<img src="img/Home/feature2.svg" class="img-responsive g-margin--auto">
-  		  </div>
-  	  </div>
-    </section>
-    
-    <section class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
-        <div class="table-responsive">
-          <!--Table-->
-          <table class="table table-striped">
-        
-            <!--Table head-->
-            <thead>
-              <tr>
-                <th></th>
-                <th>CryTech Mining</th>
-                <th>CryTech Mining with bonus</th>
-                <th>CryTech mining with bonus.<br>Payment in CRY token</th>
-                <th>mining.bitcoin.com</th>
-                <th>genesis-mining</th>
-                <th>Hashmart</th>
-              </tr>
-            </thead>
-            <!--Table head-->
-        
-            <!--Table body-->
-            <tbody>
-              <tr>
-                <th scope="row">Initial Investment</th>
-                <td>$1,000</td>
-                <td>$1,000</td>
-                <td>$1,000</td>
-                <td>$1,000</td>
-                <td>$1,000</td>
-                <td>$1,000</td>
-              </tr>
-              <tr>
-                <th scope="row">What you get:</th>
-                <td>22.2 THash</td>
-                <td>27.75 THash</td>
-                <td>27.75 THash</td>
-                <td>15 THash</td>
-                <td>6.3 Thash</td>
-                <td>10.2 Thash</td>
-              </tr>
-              <tr>
-                <th scope="row">12m Revenue</th>
-                <td>$2,050</td>
-                <td>$2,562</td>
-                <td>$4,877</td>
-                <td>$1,385</td>
-                <td>$582</td>
-                <td>$942</td>
-              </tr>
-              <tr>
-                <th scope="row">12m Costs</th>
-                <td>$1,468</td>
-                <td>$1,835</td>
-                <td>$3,493</td>
-                <td>$547</td>
-                <td>$0</td>
-                <td>$483</td>
-              </tr>
-              <tr>
-                <th scope="row">12m month profit</th>
-                <td>$582</td>
-                <td>$727</td>
-                <td>$1,384</td>
-                <td>$838</td>
-                <td>$582</td>
-                <td>$459</td>
-              </tr>
-              <tr>
-                <th scope="row">Assets value after 12 month</th>
-                <td>$1,000</td>
-                <td>$1250</td>
-                <td>$1,250</td>
-                <td>0</td>
-                <td>333</td>
-                <td>1000</td>
-              </tr>
-              <tr>
-                <th scope="row">Assets value + Profit</th>
-                <td>$1,582</td>
-                <td>$1,977</td>
-                <td>$2,634</td>
-                <td>$838</td>
-                <td>$915</td>
-                <td>$1,459</td>
-              </tr>
-              <tr class="s-profit-row">
-                <th scope="row">Profit %</th>
-                <td>58%</td>
-                <td>98%</td>
-                <td>163%</td>
-                <td>-16%</td>
-                <td>-9%</td>
-                <td>46%</td>
-              </tr>
-              <tr>
-                <th scope="row">You can sell and trade your hash power</th>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">Decentralized using smartcontracts</th>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-check g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-                <td><i class="far fa-times g-color--primary"></i></td>
-              </tr>
-              <tr>
-                <th scope="row">Hashpower ownership time</th>
-                <td>Forever</td>
-                <td>Forever</td>
-                <td>Forever</td>
-                <td>12 month</td>
-                <td>18 month</td>
-                <td>Forever</td>
-              </tr>
-            </tbody>
-            <!--Table body-->
-          </table>
-          <!--Table-->
-          <br>
-          <p>
-            NOTE: All numbers are based on current bitcoin price and network difficulty
-          </p>
-        </div>
-    </section> 
-    
-    <section class="container text-center g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs">
-        <div class="row">
-          <div class="col-xs-12 g-margin-b-40--xs">
-    		    <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Profit calculator</h3>
+              </ul>
+            </div>
           </div>
-          <div class="col-xs-12 g-margin-b-30--xs">
-                <label>The amount of investment :</label>
-                <input class="s-form-v6__input" placeholder="Investment amount">
-            </div>
-            <div class="col-xs-12 col-sm-6 g-margin-b-30--xs g-padding-x-30--xs">
-                <div class="s-team-member g-padding-x-10--xs g-padding-y-40--xs">
-                    <h4>Normal Offer</h4>
-                    <p>Calculated Hash rate : <strong>X THash</strong></p>
-                    <p>Earned profit after a year : <strong>X $</strong></p>
-                    <p>Sum of budget and profit after 12 months: <strong>X $</strong></p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 g-margin-b-30--xs g-padding-x-30--xs">
-                <div class="s-team-member g-padding-x-10--xs g-padding-y-40--xs">
-                    <h4>Special Offer</h4>
-                    <p>Total capital after a year : <strong>X THash</strong></p>
-                    <p>Earned profit after a year : <strong>X $</strong></p>
-                    <p>Sum of budget and profit after 12 months: <strong>X $</strong></p>
-                </div>
-            </div>
         </div>
-    </section>
+      </nav>
 
-    <section class="s-bg-section g-margin-b-80--sm g-margin-b-40--xs g-padding-y-80--xs g-position--relative g-width-100-percent--xs wow fadeInUp">
-      <div class="container">
-        <div class="row">
-  				<div class="col-xs-12 g-margin-b-50--xs text-center">
-  					<h3 class="s-cry-title--white g-font-size-26--xs g-font-size-28--md g-display-inline-block--xs g-font-weight--700">Transparency via Smart Contracts</h3>
-				  </div>
-  				<div class="col-xs-12 col-sm-8 g-margin-b-20--xs g-padding-x-20--xs g-color--white">
-  					All processes involving: issuing, distribution, and burning of tokens are done by Smart Contract.
-  					The Smart Contract directly inquires the Real Hash Power from the mining pool.
-  					The Smart Contract guarantees that 1 token is always equal 1 Giga Hash of SHA256 processing power (or equal amount of other algorithms).
-  				</div>
-          <div class="col-xs-12 col-sm-4 hidden">
-            <!-- <video controls>
+    </div>
+  </div>
+  <!--========== END HEADER ==========-->
+
+  <!--========== Title Promo ==========-->
+  <section class="container-fluid g-padding-x-10--xs g-padding-y-80--md g-padding-y-50--xs items" id="js-scene">
+    <div class="items__inner hidden-xs hidden-sm">
+      <img src="img/Home/new-promo-d2.svg" class="s-promo-d1 layer wow slideInDown" data-depth="0.2" data-title="no.1">
+      <img src="img/Home/new-promo-d1.svg" class="s-promo-d2 layer wow slideInDown" data-depth="0.1" data-title="no.2"
+        data-wow-delay="0.3s" data-wow-duration="1200ms">
+    </div>
+    <img src="img/Home/promo-d2.svg" class="s-promo-d1 hidden-md hidden-lg wow slideInDown">
+    <img src="img/Home/promo-d1.svg" class="s-promo-d2 hidden-md hidden-lg wow slideInDown" data-wow-delay="0.3s"
+      data-wow-duration="1200ms">
+
+    <div class="row text-center">
+      <div
+        class='col-xs-12 col-md-6 s-promo-txt g-margin-b-10--xs g-padding-x-80--lg g-padding-x-50--md g-padding-x-15--xs wow fadeIn'
+        data-wow-delay='0.1s'>
+        <div class="wow fadeIn" data-wow-delay="1s">
+          <h1
+            class="g-font-weight--700 g-margin-b-60--xs g-margin-b-10--sm g-color--white g-font-size-26--xs g-font-size-40--md g-font-size-50--lg">
+            CryTech Mining</h1>
+          <p class="g-font-weight--700 g-font-size-22--lg g-font-size-18--md g-margin-b-30--xs">Contribution in the
+            mining of profitable Cryptocurrencies, highly efficient and secure (for everyone)</p>
+          <p class="g-font-size-22--lg g-font-size-18--md">You acquire the token, we handle the labour, <br><strong>you
+              take your profit</strong>.
+            <hr class="g-width-100--xs">
+            <p>Investment in mining has never been such easy</p>
+        </div>
+      </div>
+      <div
+        class="col-xs-12 col-md-6 g-margin-t-140--lg g-margin-t-100--md g-padding-r-180--lg g-padding-r-100--sm g-margin-b-30--xs wow fadeIn"
+        data-wow-delay="1s">
+        <img src="img/Home/index-promo-1.svg" class="img-responsive g-margin--auto">
+      </div>
+
+      <div class="col-xs-12" style="background: url(img/Home/section-bg-bottom.svg) 50% 100% no-repeat;z-index: 0;">
+
+        <p class="g-margin-t-80--md g-margin-t-170--lg ">As soon as you obtain your token, you own hashpower from our
+          farms forever, as long as you hold the token.
+        </p>
+        <p>Each token equals 1 GigaHash of SHA256 algorithm - or equal amount of hashpower for other algorithms As long
+          as you hold the token, you receive the regular profit distribution.</p>
+        <p>You can also sell your tokens whenever you desire.</p>
+        <br><br>
+        <div class="hidden col-xs-12 col-md-6 col-md-offset-3 s-countdown-bg g-margin-b-40--xs text-center wow fadeIn"
+          data-wow-delay="1.5s">
+          <div class="s-countdownheader">
+            <h6 class="g-margin-b-0--xs">ICO Countdown :</h6>
+          </div>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"
+              id="Days">55</span>
+            <br>
+            <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Days</span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Hours">
+              03</span>
+            <br>
+            <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Hours </span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Minutes">
+              25</span>
+            <br>
+            <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Minutes </span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light g-vertical-align--top">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700"> : </span>
+          </h3>
+          <h3 class="g-display-inline-block--xs g-margin-l-10--xs g-color--gray-light">
+            <span class="g-font-size-60--lg g-font-size-42--md g-font-size-24--xs g-font-weight--700" id="Seconds">
+              30</span>
+            <br>
+            <span class="g-font-size-26--lg g-font-size-20--sm g-font-size-12--xs">Seconds </span>
+          </h3>
+        </div>
+        <div class="col-xs-12 g-padding-x-0--xs g-padding-x-15--sm g-margin-b-10--xs wow fadeIn">
+          <div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4 g-padding-x-0--xs g-padding-x-15--sm">
+            <form action="" id="Form">
+              <div class="input-group g-margin--auto">
+                <input id="Email" type="email" style="height: 40px;"
+                  class="form-control s-phone-number-input g-font-size-16--xs g-padding-x-20--xs" name="Email"
+                  placeholder="E-mail address">
+                <div class="g-font-size-16--xs input-group-btn s-phone-number-btn">
+                  <button type="submit" class="s-phone-number-btn g-padding-x-20--sm g-padding-x-10--xs">put <span
+                      class="hidden-xs">me </span>on the <span class="hidden-xs">wait </span>list</button>
+                </div>
+              </div>
+              <div class="errorTxt text-center"></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-xs-12">
+          <p>(we will inform you before ICO and you will be prioritized)</p>
+        </div>
+        <br><br>
+        <br><br>
+        <div class="col-xs-12 g-margin-b-100--xs wow fadeIn">
+          <div class="col-xs-12 col-md-6 col-md-offset-3 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md">
+            <hr class="g-width-100--xs">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--========== END Title Promo ==========-->
+
+  <!--========== PAGE CONTENT ==========-->
+  <section
+    class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
+
+    <div class="col-xs-12 g-margin-b-60--xs wow fadeIn">
+      <div class="col-xs-12 col-sm-7 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md g-pull-right--sm">
+        <h2 class="s-cry-title g-font-weight--700">Highly Profitable Investment</h2>
+        <p>The price of electricity is the main factor in mining profitability. We have access to inexpensive
+          electricity - 3 cents per kilowatt - that boosts the profitability </p>
+      </div>
+      <div class="col-xs-12 col-sm-5 g-padding-x-0--xs g-padding-x-15--sm">
+        <img src="img/Home/feature1.svg" class="img-responsive g-margin--auto">
+      </div>
+    </div>
+
+    <div class="col-xs-12 wow fadeIn">
+      <div class="col-xs-12 col-sm-7 g-padding-x-0--xs g-padding-x-15--sm g-padding-x-50--md">
+        <h2 class="s-cry-title g-font-weight--700">Secure Investment</h2>
+        <p>You rest assured that your budget directly goes into mining hardwares and your capital is actually swapped
+          with physical devices that mine crypto-currencies </p>
+        <p>The electricity we rely on is totally legitimate and legal. The government has officially declared mining as
+          an industry. In addition to all that, we mine in multiple countries </p>
+      </div>
+      <div class="col-xs-12 col-sm-5 g-padding-x-0--xs g-padding-x-15--sm">
+        <img src="img/Home/feature2.svg" class="img-responsive g-margin--auto">
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
+    <div class="table-responsive">
+      <!--Table-->
+      <table id="comparision" class="table table-striped">
+
+        <!--Table head-->
+        <thead>
+          <tr>
+            <th></th>
+            <th>CryTech Mining</th>
+            <th>CryTech Mining with bonus</th>
+            <th>CryTech mining with bonus.<br>Payment in CRY token</th>
+            <th>mining.bitcoin.com</th>
+            <th>genesis-mining</th>
+            <th>Hashmart</th>
+          </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody>
+          <tr id="trInvest">
+            <th scope="row">Initial Investment</th>
+            <td>$1,000</td>
+            <td>$1,000</td>
+            <td>$1,000</td>
+            <td>$1,000</td>
+            <td>$1,000</td>
+            <td>$1,000</td>
+          </tr>
+          <tr id="trHashrate">
+            <th scope="row">What you get:</th>
+            <td>22.2 THash</td>
+            <td>27.75 THash</td>
+            <td>27.75 THash</td>
+            <td>15 THash</td>
+            <td>6.3 Thash</td>
+            <td>10.2 Thash</td>
+          </tr>
+          <tr id="trRevenue" class="hidden">
+            <th scope="row">Annual Revenue</th>
+            <td>$2,050</td>
+            <td>$2,562</td>
+            <td>$4,877</td>
+            <td>$1,385</td>
+            <td>$582</td>
+            <td>$942</td>
+          </tr>
+          <tr id="trCosts" class="hidden">
+            <th scope="row">Annual Costs</th>
+            <td>$1,468</td>
+            <td>$1,835</td>
+            <td>$3,493</td>
+            <td>$547</td>
+            <td>$0</td>
+            <td>$483</td>
+          </tr>
+          <tr id="trProfit">
+            <th scope="row">Annual Profit</th>
+            <td>$582</td>
+            <td>$727</td>
+            <td>$1,384</td>
+            <td>$838</td>
+            <td>$582</td>
+            <td>$459</td>
+          </tr>
+          <tr id="trAssets">
+            <th scope="row">Assets value after 12 months</th>
+            <td>$1,000</td>
+            <td>$1250</td>
+            <td>$1,250</td>
+            <td>0</td>
+            <td>333</td>
+            <td>1000</td>
+          </tr>
+          <tr id="trAssetPlusProfit" style="font-weight: bold;">
+            <th scope="row">Assets value + Profit</th>
+            <td>$1,582</td>
+            <td>$1,977</td>
+            <td>$2,634</td>
+            <td>$838</td>
+            <td>$915</td>
+            <td>$1,459</td>
+          </tr>
+          <tr id="trProfitPercentage" class="s-profit-row">
+            <th scope="row">Profit %</th>
+            <td>58%</td>
+            <td>98%</td>
+            <td>163%</td>
+            <td>-16%</td>
+            <td>-9%</td>
+            <td>46%</td>
+          </tr>
+          <tr>
+            <th scope="row">You can sell and trade your hash power</th>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Decentralized using smartcontracts</th>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-check g-color--myco"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+            <td><i class="far fa-times g-color--red"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Hashpower ownership time</th>
+            <td class="g-color--myco">Forever</td>
+            <td class="g-color--myco">Forever</td>
+            <td class="g-color--myco">Forever</td>
+            <td class="g-color--red">12 month</td>
+            <td class="g-color--red">18 month</td>
+            <td class="g-color--myco">Forever</td>
+          </tr>
+        </tbody>
+        <!--Table body-->
+      </table>
+      <!--Table-->
+      <br>
+      <p>
+        NOTE: All numbers are based on current bitcoin price and network difficulty
+      </p>
+    </div>
+  </section>
+
+  <section class="container text-center g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs">
+    <div class="row">
+      <div class="col-xs-12 g-margin-b-40--xs">
+        <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Profit calculator</h3>
+      </div>
+      <div class="col-xs-12 g-margin-b-30--xs">
+        <label>The amount of investment :</label>
+        <input class="s-form-v6__input" placeholder="Investment amount">
+      </div>
+      <div class="col-xs-12 col-sm-6 g-margin-b-30--xs g-padding-x-30--xs">
+        <div class="s-team-member g-padding-x-10--xs g-padding-y-40--xs">
+          <h4>Normal Offer</h4>
+          <p>Calculated Hash rate : <strong>X THash</strong></p>
+          <p>Earned profit after a year : <strong>X $</strong></p>
+          <p>Sum of budget and profit after 12 months: <strong>X $</strong></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 g-margin-b-30--xs g-padding-x-30--xs">
+        <div class="s-team-member g-padding-x-10--xs g-padding-y-40--xs">
+          <h4>Special Offer</h4>
+          <p>Total capital after a year : <strong>X THash</strong></p>
+          <p>Earned profit after a year : <strong>X $</strong></p>
+          <p>Sum of budget and profit after 12 months: <strong>X $</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="s-bg-section g-margin-b-80--sm g-margin-b-40--xs g-padding-y-80--xs g-position--relative g-width-100-percent--xs wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 g-margin-b-50--xs text-center">
+          <h3
+            class="s-cry-title--white g-font-size-26--xs g-font-size-28--md g-display-inline-block--xs g-font-weight--700">
+            Transparency via Smart Contracts</h3>
+        </div>
+        <div class="col-xs-12 col-sm-8 g-margin-b-20--xs g-padding-x-20--xs g-color--white">
+          All processes involving: issuing, distribution, and burning of tokens are done by Smart Contract.
+          The Smart Contract directly inquires the Real Hash Power from the mining pool.
+          The Smart Contract guarantees that 1 token is always equal 1 Giga Hash of SHA256 processing power (or equal
+          amount of other algorithms).
+        </div>
+        <div class="col-xs-12 col-sm-4 hidden">
+          <!-- <video controls>
               <source src="movie.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
             </video> -->
-	        </div>
         </div>
       </div>
-    </section>
-	
-    <section class="container g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
-      <div class="col-xs-12 g-margin-b-40--xs text-center">
-		    <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Meet Our Team</h3>
-      </div>
-  	  
-      <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-    			<img src="img/Team/ali-gonabadi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-    			<h4 class="g-font-weight--700">Ali Gonabadi</h4>
-    			<p>Co-founder & CEO & CTO</p>
-    			<a href="https://www.linkedin.com/in/ali-gonabadi/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/mahdi-abdi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Mahdi Abdi</h4>
-  			<p>Co-founder & COO & Head of Engineering</p>
-  			<a href="https://www.linkedin.com/in/mahdi-abdi-444601170/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/saeed-bayat.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Saeed Bayat</h4>
-  			<p>Co-founder & Accounting</p>
-  		  </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-        <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-          <img src="img/Team/mahdi-tahsildari.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-          <h4 class="g-font-weight--700">Mahdi Tahsildari</h4>
-          <p>Project Manager</p>
-          <a href="https://www.linkedin.com/in/mahditahsildari/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/mahdi-ghashghaii.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Mahdi Ghashghaii</h4>
-  			<p>Head of block chain development</p>
-  			<a href="https://www.linkedin.com/in/mahdi-ghashghaei-71b60a164/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/jalal-rokhsat.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Jalal Rokhsat</h4>
-  			<p>Mechanical engineer</p>
-  			<a href="https://www.linkedin.com/in/jalal-rokhsat-584850155/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/aminvakili.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Amin Vakili</h4>
-  			<p>Graphic & UI Designer</p>
-  			<a href="https://www.linkedin.com/in/aminvakili/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/amin-gonabadi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Amin Gonabadi</h4>
-  			<p>Front-end Developer</p>
-  			<a href="https://www.linkedin.com/in/amin-gonabadi-0788b0139/" target="_blank"> <i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/moslem-ebrahimi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Muslim Ibrahimi</h4>
-  			<p>Mining Engineer</p>
-  		  </div>
-  	  </div>
-    </section>
-    
-    <!-- Advisors -->
-    <section class="container g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
-      <div class="col-xs-12 g-margin-b-40--xs text-center">
-		    <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Advisors</h3>
-      </div>
-  	  
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/dr-ahmad-ahmadi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Dr. Ahmad Ahmadi</h4>
-  			<p>Professor of Law and Legal<br>Advisor at Science and Mashhad Technology Park</p>
-  			<a href="https://www.linkedin.com/in/ahmadahmadi/" target="_blank"><i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-  			<img src="img/Team/ali-jahedi.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-  			<h4 class="g-font-weight--700">Dr. Ali Jahedi</h4>
-  			<p>Director of Mashhad<br>Science and Technology Park Development Center</p>
-  			<a href="https://www.linkedin.com/in/alijahedi/"> <i class="fab fa-linkedin g-color--blue"></i></a>
-  		  </div>
-  	  </div>
-  	  <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
-  		  <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
-    			<img src="img/Team/mohammadreza-sahebkar.jpg" class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
-    			<h4 class="g-font-weight--700">Mohammadreza Sahebkar</h4>
-    			<p>Business and Import<br>Consultant</p>
-  		  </div>
-  	  </div>
-  	</section>
+    </div>
+  </section>
 
-    <!-- timeline -->
-    <section class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-100--md g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs" style="background: url(img/Home/section-bg-up.svg) 0% 0% no-repeat;">
-      <div class="col-xs-12 g-margin-b-40--xs text-center">
-        <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Our timeline</h3>
+  <section
+    class="container g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
+    <div class="col-xs-12 g-margin-b-40--xs text-center">
+      <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Meet Our Team</h3>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/ali-gonabadi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Ali Gonabadi</h4>
+        <p>Co-founder & CEO & CTO</p>
+        <a href="https://www.linkedin.com/in/ali-gonabadi/" target="_blank"><i class="fab fa-linkedin g-color--blue">
+          </i> </a> &nbsp;
+        <a href="https://twitter.com/AliGonabadi" target="_blank"><i class="fab fa-twitter g-color--myco"></i></a>
+        <a href="https://stackoverflow.com/users/1016287/ali-gonabadi" target="_blank"
+          style="vertical-align: super;"><img src="./img/Home/stackoverflow.svg" alt="stackoverflow"
+            style="width: 24px;"></a>
       </div>
-      <div class="row">
-        <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700">April 2017</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Introduction to Cryptocurrencies and forming a team to work in various areas related to Cryptocurrencies</p>
-              <img src="img/Home/t1.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-2 g-position--relative text-center">
-            <div>
-              <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2017</span>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
-              <h6 class="g-font-weight--700">November 2017</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Developing Cryptocurrency trading robot and capital management softwares</p>
-              <img src="img/Home/t2.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-          </div>
-        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/mahdi-abdi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Mahdi Abdi</h4>
+        <p>Co-founder & COO & Head of Engineering</p>
+        <a href="https://www.linkedin.com/in/mahdi-abdi-444601170/" target="_blank"><i
+            class="fab fa-linkedin g-color--blue"> </i> </a> &nbsp;
+        <a href="https://twitter.com/MahdiiAbdii" target="_blank"><i class="fab fa-twitter g-color--myco"></i></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/saeed-bayat.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Saeed Bayat</h4>
+        <p>Co-founder & CFO</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/mahdi-tahsildari.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Mahdi Tahsildari</h4>
+        <p>Project Manager</p>
+        <a href="https://www.linkedin.com/in/mahditahsildari/" target="_blank"><i class="fab fa-linkedin g-color--blue">
+          </i> </a> &nbsp;
+        <a href="https://twitter.com/tahsildari" target="_blank"><i class="fab fa-twitter g-color--myco"></i></a>
+        <a href="https://stackoverflow.com/users/1471381/mahdi-tahsildari" target="_blank"
+          style="vertical-align: super;"><img src="./img/Home/stackoverflow.svg" alt="stackoverflow"
+            style="width: 24px;"></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/mahdi-ghashghaii.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Mahdi Ghashghaii</h4>
+        <p>Head of block chain development</p>
+        <a href="https://www.linkedin.com/in/mahdi-ghashghaei-71b60a164/" target="_blank"><i
+            class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/jalal-rokhsat.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Jalal Rokhsat</h4>
+        <p>Mechanical engineer</p>
+        <a href="https://www.linkedin.com/in/jalal-rokhsat-584850155/" target="_blank"><i
+            class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
 
-        <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700">January 2018</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Initial investigation on Cryptocurrency mining</p>
-              <img src="img/Home/t3.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
-            <div>
-              <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2018</span>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
-              <h6 class="g-font-weight--700">December2018</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Starting serious investigations to launch Cryptocurrency mining and access to cheap electricity, the Key to success in mining</p>
-              <img src="img/Home/t4.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-          </div>
-        </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/aminvakili.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Amin Vakili</h4>
+        <p>Graphic & UI Designer</p>
+        <a href="https://www.linkedin.com/in/aminvakili/" target="_blank"><i
+            class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/amin-gonabadi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Amin Gonabadi</h4>
+        <p>Front-end Developer</p>
+        <a href="https://www.linkedin.com/in/amin-gonabadi-0788b0139/" target="_blank"> <i
+            class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
 
-        <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700 g-margin-l-70--xs">March 2019</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Launching first mini-farm with the capacity of 200 Terahash and 20 KiloWatt Hour power consumption to experience the challenges of running and maintaining mining farms</p>
-              <img src="img/Home/t5.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-            <div class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700">August 2019</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Start mining in second country</p>
-              <img src="img/Home/t7.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
-            <div>
-              <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2019</span>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
-              <h6 class="g-font-weight--700">July 2019</h6>
-              <p><i class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Start developing the Mining Service Platform</p>
-              <img src="img/Home/t6.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
-            <div class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
-              <h6 class="g-font-weight--700">November 2019</h6>
-              <p>ICO</p>
-              <img src="img/Home/t8.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/moslem-ebrahimi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Muslim Ibrahimi</h4>
+        <p>Mining Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Advisors -->
+  <section
+    class="container g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs g-padding-x-100--md">
+    <div class="col-xs-12 g-margin-b-40--xs text-center">
+      <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Advisors</h3>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/dr-ahmad-ahmadi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Dr. Ahmad Ahmadi</h4>
+        <p>Professor of Law and Legal<br>Advisor at Science and Mashhad Technology Park</p>
+        <a href="https://www.linkedin.com/in/ahmadahmadi/" target="_blank"><i
+            class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/ali-jahedi.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Dr. Ali Jahedi</h4>
+        <p>Director of Mashhad<br>Science and Technology Park Development Center</p>
+        <a href="https://www.linkedin.com/in/alijahedi/"> <i class="fab fa-linkedin g-color--blue"></i></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 g-margin-b-60--xs">
+      <div class="col-xs-12 g-padding-x-20--md g-padding-y-30--xs s-team-member text-center">
+        <img src="img/Team/mohammadreza-sahebkar.jpg"
+          class="g-margin--auto g-margin-b-10--xs g-padding-x-20--xs g-padding-x-50--md img-circle img-responsive">
+        <h4 class="g-font-weight--700">Mohammadreza Sahebkar</h4>
+        <p>Business and Import<br>Consultant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- timeline -->
+  <section
+    class="container-fluid g-padding-x-10--xs g-padding-x-35--sm g-padding-x-100--md g-padding-x-150--lg g-margin-b-30--xs g-margin-b-0--md g-padding-y-80--md g-padding-y-50--xs"
+    style="background: url(img/Home/section-bg-up.svg) 0% 0% no-repeat;">
+    <div class="col-xs-12 g-margin-b-40--xs text-center">
+      <h3 class="s-cry-title g-display-inline-block--xs g-font-weight--700">Our timeline</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+            <h6 class="g-font-weight--700">April 2017</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Introduction
+              to Cryptocurrencies and forming a team to work in various areas related to Cryptocurrencies</p>
+            <img src="img/Home/t1.svg" class="hidden-xs hidden-sm" alt="">
           </div>
         </div>
+        <div class="col-xs-12 col-md-2 g-position--relative text-center">
+          <div>
+            <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2017</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
+            <h6 class="g-font-weight--700">November 2017</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Developing
+              Cryptocurrency trading robot and capital management softwares</p>
+            <img src="img/Home/t2.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+      </div>
 
-        <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700">January 2020</h6>
-              <p>Purchase miners and equipments to expand the mining volumeLaunching User Dashboard</p>
-              <img src="img/Home/t9.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
+      <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+            <h6 class="g-font-weight--700">January 2018</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Initial
+              investigation on Cryptocurrency mining</p>
+            <img src="img/Home/t3.svg" class="hidden-xs hidden-sm" alt="">
           </div>
-          <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
-            <div>
-              <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2020</span>
-            </div>
+        </div>
+        <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
+          <div>
+            <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2018</span>
           </div>
-          <div class="col-xs-12 col-md-5 g-padding-x-70--md">
-            <div class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
-              <h6 class="g-font-weight--700">February 2020</h6>
-              <p>The first profit distribution</p>
-              <img src="img/Home/t-final.svg" class="hidden-xs hidden-sm" alt="">
-            </div>
+        </div>
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
+            <h6 class="g-font-weight--700">December2018</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Starting
+              serious investigations to launch Cryptocurrency mining and access to cheap electricity, the Key to success
+              in mining</p>
+            <img src="img/Home/t4.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+            <h6 class="g-font-weight--700 g-margin-l-70--xs">March 2019</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Launching
+              first mini-farm with the capacity of 200 Terahash and 20 KiloWatt Hour power consumption to experience the
+              challenges of running and maintaining mining farms</p>
+            <img src="img/Home/t5.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+          <div
+            class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+            <h6 class="g-font-weight--700">August 2019</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Start
+              mining in second country</p>
+            <img src="img/Home/t7.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
+          <div>
+            <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2019</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
+            <h6 class="g-font-weight--700">July 2019</h6>
+            <p><i
+                class="fa-badge-check far g-color--blueviolet g-color--purple g-font-size-20--xs g-margin-r-10--xs"></i>Start
+              developing the Mining Service Platform</p>
+            <img src="img/Home/t6.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+          <div
+            class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
+            <h6 class="g-font-weight--700">November 2019</h6>
+            <p>ICO</p>
+            <img src="img/Home/t8.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 s-timeline-yearline g-padding-y-30--xs g-padding-x-0--xs g-z-index--1">
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--left g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+            <h6 class="g-font-weight--700">January 2020</h6>
+            <p>Purchase miners and equipments to expand the mining volumeLaunching User Dashboard</p>
+            <img src="img/Home/t9.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-2 s-timeline-yearline g-position--relative text-center">
+          <div>
+            <span class="g-font-size-60--md g-font-weight--700 s-timeline-year">2020</span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-5 g-padding-x-70--md">
+          <div
+            class="s-timeline-item--right g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10 g-margin-t-40--sm">
+            <h6 class="g-font-weight--700">February 2020</h6>
+            <p>The first profit distribution</p>
+            <img src="img/Home/t-final.svg" class="hidden-xs hidden-sm" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-sm-6 col-sm-offset-3 g-z-index--1">
+        <div
+          class="s-timeline-item--left text-center g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
+          <h6 class="g-font-weight--700">Q1 2020</h6>
+          <p>Launching our first Hydroelectric Power Plant</p>
+          <!-- <img src="img/Home/t-final.svg" class="hidden-xs hidden-sm" alt=""> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--========== END PAGE CONTENT ==========-->
+
+  <!--========== FOOTER ==========-->
+  <footer class="s-footer g-position--relative">
+    <div class="container s-footer-container g-padding-y-30--xs">
+      <div class="row g-padding-y-10--md g-padding-x-20--md">
+
+        <div class="col-xs-12 col-sm-3 g-padding-y-35--md text-center g-pull-right--sm">
+          <!-- social links -->
+          <div class="g-font-size-20--xs">
+            <a href=""><i class='fab fa-instagram g-margin-l-10--xs'></i></a>
+            <a href=""><i class='fab fa-twitter g-margin-l-10--xs'></i></a>
+            <a href=""><i class='fab fa-facebook g-margin-l-10--xs'></i></a>
+            <a href=""><i class='fab fa-linkedin g-margin-l-10--xs'></i></a>
           </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-sm-6 col-sm-offset-3 g-z-index--1">
-          <div class="s-timeline-item--left text-center g-box-shadow__primary-v1 g-padding-x-15--xs g-padding-y-30--xs g-radius--10">
-              <h6 class="g-font-weight--700">Q1 2020</h6>
-              <p>Launching our first Hydroelectric Power Plant</p>
-              <!-- <img src="img/Home/t-final.svg" class="hidden-xs hidden-sm" alt=""> -->
-            </div>
+        <div class="col-xs-12 col-sm-6 g-padding-y-35--md text-center g-pull-right--sm">
+          <a href="About.html">About</a>
+          <a href="Contact.html" class="g-margin-l-15--xs">Contact</a>
+          <a href="FAQ.html" class="g-margin-l-15--xs">FAQ</a>
+          <a href="Terms.html" class="g-margin-l-15--xs">Terms of Services</a><br><br>
+          <a href="white-paper.pdf" class="g-margin-l-15--xs">White Paper</a>
+          <a href="https://github.com/cry-tech/crytech-mining" target="_blank" class="g-margin-l-15--xs">Github</a>
+          <hr class="hidden-md hidden-lg hidden-sm">
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-sm-2">
+          <a href="index.html" class="g-text-center--xs">
+            <img class="img-responsive g-margin-b-20--xs g-margin--auto" src="img/HeaderLogo-shrink.svg" alt="">
+          </a>
+        </div>
+        <div class="col-xs-12 text-left">
+          <p class="g-font-size-12--xs g-margin-b-0--xs">Copyright ©
+            <script>document.write(new Date().getFullYear())</script>. All rights reserved.</p>
+          <p class="g-font-size-12--xs g-margin-b-0--xs">Designed & Developed by : <a
+              href="http://zhabizgroup.ir">Zhabiz Group</a></p>
         </div>
 
       </div>
-    </section>
-    <!--========== END PAGE CONTENT ==========-->
+    </div>
+  </footer>
+  <!--========== END FOOTER ==========-->
 
-    <!--========== FOOTER ==========-->
-    <footer class="s-footer g-position--relative">
-      <div class="container s-footer-container g-padding-y-30--xs">
-		    <div class="row g-padding-y-10--md g-padding-x-20--md">
+  <!-- Back To Top -->
+  <!-- <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a> -->
 
-          <div class="col-xs-12 col-sm-3 g-padding-y-35--md text-center g-pull-right--sm">
-            <!-- social links -->
-            <div class="g-font-size-20--xs">
-              <a href=""><i class='fab fa-instagram g-margin-l-10--xs'></i></a>
-              <a href=""><i class='fab fa-twitter g-margin-l-10--xs'></i></a>
-              <a href=""><i class='fab fa-facebook g-margin-l-10--xs'></i></a>
-              <a href=""><i class='fab fa-linkedin g-margin-l-10--xs'></i></a>
-            </div>
-          </div>
-		  
-    		  <div class="col-xs-12 col-sm-6 g-padding-y-35--md text-center g-pull-right--sm">
-            <a href="About.html">About</a>
-            <a href="Contact.html" class="g-margin-l-15--xs">Contact</a>
-      			<a href="FAQ.html" class="g-margin-l-15--xs">FAQ</a>
-            <a href="Terms.html" class="g-margin-l-15--xs">Terms of Services</a><br><br>
-            <a href="white-paper.pdf" class="g-margin-l-15--xs">White Paper</a>
-            <a href="https://github.com/cry-tech/crytech-mining" class="g-margin-l-15--xs">Github</a>
-            <hr class="hidden-md hidden-lg hidden-sm">
-          </div>
-		  
-		      <div class="col-xs-12 col-md-3 col-sm-2">
-            <a href="index.html" class="g-text-center--xs">
-              <img class="img-responsive g-margin-b-20--xs g-margin--auto" src="img/HeaderLogo-shrink.svg" alt="">
-            </a>
-          </div>
-          <div class="col-xs-12 text-left">
-            <p class="g-font-size-12--xs g-margin-b-0--xs">Copyright © <script>document.write(new Date().getFullYear())</script>. All rights reserved.</p>
-            <p class="g-font-size-12--xs g-margin-b-0--xs">Designed & Developed by : <a href="http://zhabizgroup.ir">Zhabiz Group</a></p>
-          </div>
-		  
-        </div>
-      </div>
-    </footer>
-    <!--========== END FOOTER ==========-->
+  <script src="vendor/jquery.min.js"></script>
+  <script src="vendor/jquery.migrate.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendor/jquery.wow.min.js"></script>
+  <script src="vendor/jquery.back-to-top.min.js"></script>
+  <script src="js/global.min.js"></script>
+  <script src="js/components/header-sticky.js"></script>
+  <script src="js/components/wow.min.js"></script>
+  <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+  <script src="vendor/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#Form').validate({
+        rules: {
+          Email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          LoginUsername: {
+            required: "Please enter your email",
+            email: "please enter a valid email (with use of @)"
+          }
+        },
+        errorElement: 'div',
+        errorLabelContainer: '.errorTxt'
+      });
+    });
+  </script>
+  <script>
+    var target_date = new Date().getTime() + (1000 * 3600 * 48); // set the countdown date
+    var days, hours, minutes, seconds; // variables for time units
 
-    <!-- Back To Top -->
-    <!-- <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a> -->
-    
-    <script src="vendor/jquery.min.js"></script>
-    <script src="vendor/jquery.migrate.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.wow.min.js"></script>
-    <script src="vendor/jquery.back-to-top.min.js"></script>
-    <script src="js/global.min.js"></script>
-    <script src="js/components/header-sticky.js"></script>
-    <script src="js/components/wow.min.js"></script>
-    <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
-    <script src="vendor/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#Form').validate({
-                rules: {
-                    Email: {
-                        required: true,
-                        email:true
-                    }
-                },
-                messages: {
-                    LoginUsername: {
-                        required: "Please enter your email",
-                        email: "please enter a valid email (with use of @)"
-                    }
-                },
-                errorElement : 'div',
-                errorLabelContainer: '.errorTxt'
-            });
-        });
-    </script>
-    <script>
-      var target_date = new Date().getTime() + (1000*3600*48); // set the countdown date
-      var days, hours, minutes, seconds; // variables for time units
+    var countdownD = document.getElementById("Days");
+    var countdownH = document.getElementById("Hours");
+    var countdownM = document.getElementById("Minutes");
+    var countdownS = document.getElementById("Seconds"); // get tag element
 
-      var countdownD = document.getElementById("Days");
-      var countdownH = document.getElementById("Hours");
-      var countdownM = document.getElementById("Minutes");
-      var countdownS = document.getElementById("Seconds"); // get tag element
+    getCountdown();
 
-      getCountdown();
+    setInterval(function () { getCountdown(); }, 1000);
 
-      setInterval(function () { getCountdown(); }, 1000);
+    function getCountdown() {
 
-      function getCountdown(){
+      // find the amount of "seconds" between now and target
+      var current_date = new Date().getTime();
+      var seconds_left = (target_date - current_date) / 1000;
 
-        // find the amount of "seconds" between now and target
-        var current_date = new Date().getTime();
-        var seconds_left = (target_date - current_date) / 1000;
+      days = pad(parseInt(seconds_left / 86400));
+      seconds_left = seconds_left % 86400;
 
-        days = pad( parseInt(seconds_left / 86400) );
-        seconds_left = seconds_left % 86400;
-           
-        hours = pad( parseInt(seconds_left / 3600) );
-        seconds_left = seconds_left % 3600;
-            
-        minutes = pad( parseInt(seconds_left / 60) );
-        seconds = pad( parseInt( seconds_left % 60 ) );
+      hours = pad(parseInt(seconds_left / 3600));
+      seconds_left = seconds_left % 3600;
 
-        // format countdown string + set tag value
-        countdownD.innerHTML = days; 
-        countdownH.innerHTML = hours; 
-        countdownM.innerHTML = minutes; 
-        countdownS.innerHTML = seconds; 
+      minutes = pad(parseInt(seconds_left / 60));
+      seconds = pad(parseInt(seconds_left % 60));
+
+      // format countdown string + set tag value
+      countdownD.innerHTML = days;
+      countdownH.innerHTML = hours;
+      countdownM.innerHTML = minutes;
+      countdownS.innerHTML = seconds;
+    }
+
+    function pad(n) {
+      return (n < 10 ? '0' : '') + n;
+    }
+  </script>
+  <script>
+    var scene = document.getElementById('js-scene');
+    var Parallax = new Parallax(scene);
+  </script>
+  <script>
+    // Fill profitability comparision table
+
+    var minePerTerahash = 0.00001933; // Mining amount per Thash per day
+    var btcPrice = 8300.63;
+    var investAmount = 1000;
+    var bonus = 20 / 100; // bonus percentage in ICO Phase
+
+    var comparisionList = [{
+      id: "crytech",
+      name: "CryTech Mining",
+      MaintenanceCost: 0.13, // Maintenance cost per Thash per Day
+      HashratePrice: 45, // Price per THash
+      contractTime: 0, // contract duration in months. 0 means unlimited
+      profitShare: 0.5
+    },
+    {
+      id: "crytechBonus",
+      name: "CryTech Mining with bonus",
+      MaintenanceCost: 0.13,
+      HashratePrice: 37.5,
+      contractTime: 0,
+      profitShare: 0.5
+    },
+    {
+      id: "crytechBonusCry",
+      name: "CryTech mining with bonus. Payment in CRY token",
+      MaintenanceCost: 0.13,
+      HashratePrice: 37.5,
+      contractTime: 0,
+      profitShare: 0.5
+    }, {
+      id: "mining.bitcoin.com",
+      name: "mining.bitcoin.com",
+      MaintenanceCost: 0.1,
+      HashratePrice: 25,
+      contractTime: 12,
+      profitShare: 1
+    },
+    {
+      id: "genesisMining",
+      name: "Genesis Mining",
+      MaintenanceCost: 0.15,
+      HashratePrice: 41.7,
+      contractTime: 21,
+      profitShare: 1
+    },
+    {
+      id: "hashmart",
+      name: "Hashmart",
+      MaintenanceCost: 0.13,
+      HashratePrice: 98,
+      contractTime: 0,
+      profitShare: 1
+    }
+    ];
+
+    for (let i = 0; i < comparisionList.length; i++) {
+      var item = comparisionList[i];
+      item.hashRate = Number((investAmount / item.HashratePrice).toFixed(1));
+      item.revenue = Math.round(item.hashRate * minePerTerahash * 365 * btcPrice);
+      item.costs = Math.round(item.MaintenanceCost * item.hashRate * 365);
+      item.profit = (item.revenue - item.costs) * item.profitShare;
+      item.assetsValue = Math.round(item.contractTime == 0 ? investAmount : investAmount - (investAmount / item.contractTime * 12));
+      if (item.id == "crytechBonusCry" || item.id == "crytechBonus")
+        item.assetsValue = investAmount * (1 + bonus);
+
+      // ---------------------------
+      if (item.id == "crytechBonusCry") {
+        var weeksInYear = 365 / 7;
+        item.revenue = item.costs = 0;
+        var hashRate = item.hashRate;
+        for (let j = 0; j < weeksInYear; j++) {
+          var revenue = Math.round(hashRate * minePerTerahash * 7 * btcPrice);
+          var costs = Math.round(item.MaintenanceCost * hashRate * 7);
+          var profit = (revenue - costs) * item.profitShare;
+          item.revenue += revenue;
+          item.costs += costs;
+          item.profit += profit;
+          hashRate += profit / comparisionList[0].HashratePrice;
+        }
       }
+      // ---------------------------
 
-      function pad(n) {
-        return (n < 10 ? '0' : '') + n;
-      }
-    </script>
-    <script>
-        var scene = document.getElementById('js-scene');
-        var Parallax = new Parallax(scene);
-    </script>
-  </body>
+      item.AssetPlustProfit = item.profit + item.assetsValue;
+      item.profitPercentage = Math.round(item.AssetPlustProfit / investAmount * 100) - 100;
+
+      $("#trInvest > td")[i].innerText = "$" + investAmount;
+      $("#trHashrate > td")[i].innerText = item.hashRate + " Thash";
+      $("#trRevenue > td")[i].innerText = "$" + item.revenue;
+      $("#trCosts > td")[i].innerText = "$" + item.costs;
+      $("#trProfit > td")[i].innerText = "$" + item.profit;
+      $("#trAssets > td")[i].innerText = "$" + item.assetsValue;
+      $("#trAssetPlusProfit > td")[i].innerText = "$" + item.AssetPlustProfit;
+      $("#trProfitPercentage > td")[i].innerText = item.profitPercentage + "%";
+    }
+
+  </script>
+</body>
+
 </html>
