@@ -88,6 +88,10 @@
     font-family:Montserrat;
 }
 
+.g-color--purple{
+  color: #8f6efc;
+}
+
 p,
 h1,
 h2,
@@ -320,19 +324,10 @@ article:hover {
     position: absolute;
     top: -13px;
     left: -10px;
-    background: url(../img/Home/TitleSign2.svg) 50% 50% no-repeat/cover;
-    background-size: 75px 76px;
     display: inline-block;
     width: 70px;
     height: 76px;
     z-index: 1;
-    -webkit-transition:500ms;
-    -moz-transition:500ms;
-    transition:500ms;
-}
-.s-cry-title:hover:before, .s-cry-title--white:hover:before {
-  left: -25px;
-  opacity: 0;
 }
 .s-cry-title--white {
 	color:white;
@@ -3424,4 +3419,34 @@ fieldset[disabled] .s-btn {
 
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: #13b1cd;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #8f6efc;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #8f6efc;
+  cursor: pointer;
 }
