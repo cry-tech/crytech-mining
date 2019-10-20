@@ -258,8 +258,9 @@
                   class="form-control s-phone-number-input g-font-size-16--xs g-padding-x-20--xs" name="Email"
                   placeholder="E-mail address">
                 <div class="g-font-size-16--xs input-group-btn s-phone-number-btn">
-                  <button type="submit" class="s-phone-number-btn g-padding-x-20--sm g-padding-x-10--xs">put <span
-                      class="hidden-xs">me </span>on the <span class="hidden-xs">wait </span>list</button>
+                  <button type="submit" class="s-phone-number-btn g-padding-x-20--sm g-padding-x-10--xs"
+                    >put <span class="hidden-xs">me </span>on the <span class="hidden-xs">waiting
+                    </span>list</button>
                 </div>
               </div>
               <div class="errorTxt text-center"></div>
@@ -911,7 +912,19 @@
           }
         },
         errorElement: 'div',
-        errorLabelContainer: '.errorTxt'
+        errorLabelContainer: '.errorTxt',
+        submitHandler: function (form) {
+          $.ajax({
+            type: 'POST',
+            url: "/subscribe",
+            contentType: "application/json",
+            data: JSON.stringify({ "email": $("#Email").val() }),
+            success: function (result) {
+              alert(result);
+            }
+          })
+
+        }
       });
 
       $('[data-toggle="tooltip"]').tooltip();
@@ -1137,7 +1150,7 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150196852-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-150196852-1');
