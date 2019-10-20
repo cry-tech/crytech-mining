@@ -259,10 +259,11 @@ i {
 p {
   font-size: 1.04rem;
   font-weight: 300;
-  color: #656565;
+  color: #444;
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1rem;
+  text-shadow:1px 1px 1px #fff, -1px -1px 1px #fff
 }
 
 /* Links */
@@ -498,7 +499,8 @@ article:hover {
 
 @media(min-width: 767px) {
   .s-promo-txt p {
-	  color:white;
+    color:white;
+    text-shadow: 1px 1px 1px #8865f9, -1px -1px 1px #8865f9, -1px 1px 1px #8865f9, 1px -1px 1px #8865F9;
   }
 }
 @media(min-width:992px){
