@@ -484,15 +484,33 @@ article:hover {
   left: 50%;
   z-index: -1;
 }
+
 .s-timeline-year {
-  color: #D9DADA;
+  color: #bbb;
+  background: white;
+  margin-bottom: 10px;
+  display: inline-block;
 }
+
+.s-timeline-year2017 {
+  background: #f8f4fe;
+}
+
 @media(min-width: 767px) {
   .s-promo-txt p {
 	  color:white;
   }
 }
+@media(min-width:992px){
+  .s-timeline-year2017 {
+    background: #f4edfe;
+  }
+  .s-timeline-year2018 {
+    background: #faf8fe;
+  }
+}
 @media(min-width: 1000px) {
+
   .s-promo-d1 {
     position: absolute;
     width: 96%;
@@ -3449,4 +3467,8 @@ fieldset[disabled] .s-btn {
   border-radius: 50%;
   background: #8f6efc;
   cursor: pointer;
+}
+
+.badge.badge-primary{
+  background: #8f6efc;
 }
