@@ -30,5 +30,11 @@ app.post('/subscribe', function (req, res) {
         req.body.email + ") on the list. We will inform you via email.";
         bot.sendMessage(`new subscriber:\n${req.body.email}`);
         res.send(msg);  //JSON.stringify(response)
-})
+});
+app.post('/contact', function (req, res) {
+    var msg = "We got your message. \nYou will soon receive an email from us.";
+        bot.sendMessage(`new contact message\n\nemail: ${req.body.email}\nname: ${req.body.name}\nmessage:\n${req.body.message}`);
+        res.send(msg);  //JSON.stringify(response)
+});
 app.listen(80);
+
