@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://mining.crytech.trade/sitemap.xml
+Sitemap: https://mining.crytech.trade/sitemap.xml
