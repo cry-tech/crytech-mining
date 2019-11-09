@@ -265,7 +265,7 @@ p {
   line-height: 1.6;
   margin-top: 0;
   margin-bottom: 1rem;
-  text-shadow:1px 1px 1px #fff, -1px -1px 1px #fff
+  /* text-shadow:1px 1px 1px #fff, -1px -1px 1px #fff */
 }
 
 /* Links */
@@ -306,7 +306,7 @@ article:hover {
 	content:'';
 	position:absolute;
 	width:100%;
-	height:100%;
+	height:105%;
 	background:#7E51F2;
 	top:0%;
 	left:0%;
@@ -314,10 +314,10 @@ article:hover {
 	-moz-transition:300ms;
 	transition:300ms;
 }
-.s-bg-section:hover:before {
+/* .s-bg-section:hover:before {
 	height:115%;
 	top:-5%;
-}
+} */
 .s-cry-title, .s-cry-title--white {
 	position: relative;
 	z-index: 2;
