@@ -91,7 +91,9 @@
 .g-color--purple{
   color: #8f6efc;
 }
-
+.g-color--white{
+  text-shadow: none;
+}
 p,
 h1,
 h2,
