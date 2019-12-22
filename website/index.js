@@ -1,6 +1,8 @@
-var express = require('express');
-var app = express();
-var fs = require('fs');
+const fs = require('fs');
+const exphbs = require('express-hbs')
+const express = require('express');
+const app = express();
+const pagesData = require('./data/pages').pages;
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
@@ -9,6 +11,14 @@ app.use(express.json());
 // var urlencodedParser = bodyParser.urlencoded({ extended: false })  
 
 app.use(express.static('.'));
+
+app.engine('hbs', exphbs.express4({
+  partialsDir: 'views/partials',
+  defaultLayout: 'views/layouts/default.hbs'
+}));
+
+app.set('view engine', 'hbs');
+app.set('partials', __dirname + '/views/partials');
 
 const token = "510961664:AAGCF1blO2s-PR4FmoB72q41JCcQ-jzi7jQ";
 var bot = {
@@ -27,6 +37,8 @@ var bot = {
   }
 };
 
+// Routing
+
 app.post('/subscribe', function (req, res) {
   var msg = "Thank you for your interest. We have put your email (" +
     req.body.email + ") on the list. We will inform you via email.";
@@ -39,13 +51,13 @@ app.post('/contact', function (req, res) {
   res.send(msg);  //JSON.stringify(response)
 });
 
-// 404 error handling
 app.get('*', function (req, res) {
-  //var html = fs.readFileSync(__dirname + '/index.html', 'utf8')
-  //res.render('test', { html: html })
-  res.status(404).sendFile(__dirname +'/404.html');
-  //  res.send('what???', 404);
+  
+  var page = pagesData[req.path.toLowerCase()];
+  if (!page)
+    return res.status(404).render('404', { transparentNavBar: true });
+
+  res.render(page.name,page);
 });
 
 app.listen(80);
-

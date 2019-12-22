@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="author" content="Crytech Mining">
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:site_name" content="Crytech Mining" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:image" content="https://mining.crytech.trade/img/HeaderLogo-shrink.svg" />
+  <meta property="og:image:type" content="image/png" />
+  <!-- Vendor Styles -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/css/animate.css" rel="stylesheet" type="text/css" />
+  <!-- Theme Styles -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/global/global.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/css/font-awesome-5.css">
+  <link href="/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+
+  {{{block "head"}}}
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <meta name="theme-color" content="#8f6efc" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#8f6efc">
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Organization",
+      "name" : "Crytech Mining",
+      "url" : "https://mining.crytech.trade",
+      "sameAs" : [
+        "https://twitter.com/crytechmining",
+        "https://www.linkedin.com/company/cry-tech/",
+        "https://www.facebook.com/crytechmining",
+        "https://www.instagram.com/crytech_mining/",
+        "https://www.reddit.com/user/crytech_mining/"
+        ]
+    }
+    </script>
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header
+    class="navbar-fixed-top s-header-v2 js__header-sticky hidden-xs hidden-sm {{#if transparentNavBar}} nav-transparent {{/if}}">
+    <!-- Navbar -->
+    <nav class="s-header-v2__navbar">
+      <div class="container-fluid">
+        <!-- Navbar Row -->
+        <div class="g-padding-x-100--lg g-padding-x-10--md row">
+          <div class="col-md-8 s-header-v2__navbar-col g-padding-x-0--xs">
+            <div class="collapse navbar-collapse s-header-v2__navbar-collapse" id="nav-collapse">
+              <ul class="s-header-v2__nav g-padding-r-0--xs">
+                <li class="s-header-v2__nav-item">
+                  <a href="/" class="s-header-v2__nav-link">
+                    <img class="g-width-130--xs s-header__logo-img-default g-position--absolute"
+                      style="padding-top: 5px;" src="img/HeaderLogo-default.svg" alt="">
+                    <img class="g-width-130--xs s-header__logo-img-shrink" src="img/HeaderLogo-shrink.svg" alt="">
+                  </a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="/about" class="s-header-v2__nav-link">About</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="/contact" class="s-header-v2__nav-link">Contact</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="/faq" class="s-header-v2__nav-link">FAQ</a>
+                </li>
+                <li class="s-header-v2__nav-item">
+                  <a href="/blog" class="s-header-v2__nav-link">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 s-header-v2__navbar-col s-header-v2__navbar-col--right g-padding-x-0--xs">
+            <ul class="s-header-v2__nav g-pull-right--xs">
+              <li class="s-header-v2__nav-item">
+                <a href="https://github.com/cry-tech" class="s-header-v2__nav-link">
+                  Github
+                </a>
+              </li>
+              <li class="s-header-v2__nav-item">
+                <a href="/white-paper.pdf" class="s-header-v2__nav-link">
+                  <span
+                    class="g-box-shadow__dark-lightest-v4 g-padding-x-20--xs g-padding-y-5--xs g-radius--50 s-btn--primary-brd">
+                    White Paper
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+  </header>
+
+  <!-- header responsive -->
+  <div class="navbar-fixed-top hidden-md hidden-lg">
+    <div class="sidebar">
+      <div class="sidebar-wrapper g-bg-color--mobilemenu">
+        <div class="logo text-center" style="padding:12px 0px !important;">
+          <img class="g-width-130--xs" src="img/HeaderLogo-default.svg" alt="">
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="/">
+              <i class="fal fa-home-alt g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">Home</p>
+            </a>
+          </li>
+          <li>
+            <a href="/white-paper.pdf">
+              <i class="fal fa-scroll g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">White Paper</p>
+            </a>
+          </li>
+          <li>
+            <a href="/faq">
+              <i class="fal fa-coins g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">FAQ</p>
+            </a>
+          </li>
+          <li>
+            <a href="/about">
+              <i class="fal fa-info-circle g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">About</p>
+            </a>
+          </li>
+          <li>
+            <a href="/contact">
+              <i class="fal fa-headset g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">Contact</p>
+            </a>
+          </li>
+          <li>
+            <a href="/blog">
+              <i class="fal fa-newspaper g-font-size-20--xs g-color--white"></i>
+              <p class="g-font-size-14--xs g-color--white">Blog</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+      <nav class="navbar g-bg-color--mobile-header navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-xs-4 navbar-header g-pull-right--xs">
+              <button dir="rtl" type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div class="col-xs-8 text-left">
+              <a href="/">
+                <img class="g-width-100--xs g-margin-t-5--xs" src="img/HeaderLogo-shrink.svg" alt="">
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-left">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+  <!--========== END HEADER ==========-->
+
+  {{{ body }}}
+
+  <!--========== FOOTER ==========-->
+  <footer class="s-footer g-position--relative">
+    <div class="container s-footer-container g-padding-y-30--xs">
+      <div class="row g-padding-y-10--md g-padding-x-20--md">
+
+        <div class="col-xs-12 col-sm-3 text-center g-pull-right--sm">
+          <!-- social links -->
+          <div class="g-font-size-26--xs">
+            <a href="https://twitter.com/crytechmining" target="_blank"><i
+                class='fab fa-twitter g-margin-l-10--xs'></i></a>
+            <a href="https://t.me/CrytechMining" target="_blank"><i
+                class='fab fa-telegram-plane g-margin-l-10--xs'></i></a>
+            <a href="https://www.linkedin.com/company/cry-tech/" target="_blank"><i
+                class='fab fa-linkedin g-margin-l-10--xs'></i></a>
+            <a href="https://www.instagram.com/crytech_mining/" target="_blank"><i
+                class='fab fa-instagram g-margin-l-10--xs'></i></a>
+            <a href="https://www.facebook.com/crytechmining" target="_blank"><i
+                class='fab fa-facebook g-margin-l-10--xs'></i></a>
+          </div>
+          <br>
+        </div>
+        <div class="col-xs-12 col-sm-6 text-center g-pull-right--sm">
+          <a href="/blog" class="g-margin-l-15--xs">Blog</a>
+          <a href="/white-paper.pdf" class="g-margin-l-15--xs">White Paper</a>
+          <a href="https://github.com/cry-tech" target="_blank" class="g-margin-l-15--xs">Github</a><br><br>
+          <a href="/about">About</a>
+          <a href="/contact" class="g-margin-l-15--xs">Contact</a>
+          <a href="/faq" class="g-margin-l-15--xs">FAQ</a>
+          <a href="/terms-of-services" class="g-margin-l-15--xs">Terms of Services</a>
+          <br><br>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <a href="index.html" class="g-text-center--xs">
+            <img class="img-responsive g-margin-b-20--xs g-margin--auto" src="img/HeaderLogo-shrink.svg" alt="">
+          </a>
+        </div>
+        <div class="col-xs-12 text-center">
+          <p class="g-font-size-12--xs g-margin-b-0--xs">Copyright ©
+            <script>document.write(new Date().getFullYear())</script>.
+            All rights reserved. Web Designed by: Zhabiz Group
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--========== END FOOTER ==========-->
+
+  <script src="/vendor/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+  <script src="/js/components/header-sticky.js"></script>
+
+  {{{block "scripts"}}}
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150196852-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-150196852-1');
+  </script>
+
+</body>
+
+</html>

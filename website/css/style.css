@@ -87,7 +87,13 @@
 .Montserrat {
     font-family:Montserrat;
 }
+.navbar-fixed-top{
+  background: #8f6efc;
+}
 
+.navbar-fixed-top.nav-transparent{
+  background: transparent;
+}
 .g-color--purple{
   color: #8f6efc;
 }
@@ -716,7 +722,7 @@ article:hover {
 }
 .items__inner {
   position: absolute;
-  top:-10px !important;
+  top:-27px !important;
 }
 .items__layer .items__item {
   position: absolute;

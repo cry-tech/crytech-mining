@@ -1,0 +1,47 @@
+{
+  "pages": {
+    "/":{
+      "name":"home",
+      "title":"Crytech. Tokenized Bitcoin Mining. Passive Income. High ROI. CRY token",
+      "description":"An ERC-20 token backed by hashpower. Each token backed by 1 Gigahash processing power of the mining device in CryTech’s farms forever. This lifetime hash power will mine for you while you hold your tokens. If a mining device is broken or outdated, it will be replaced And you will not suﬀer any loss or expenses.",
+      "image":"https://mining.crytech.trade/img/HeaderLogo-shrink.svg",
+      "imagetype":"image/svg",
+      "keywords":"",
+      "transparentNavBar": true
+    },
+    "/about": {
+      "name":"about",
+      "title":"About Us - Crytech Mining - CRY token",
+      "description":"We are active in various aspects of blockchain and crypto-currencies, including: mining, trading, creating new blockchain products and services, etc.",
+      "image":"https://mining.crytech.trade/img/HeaderLogo-shrink.svg",
+      "imagetype":"image/svg",
+      "keywords":""
+    },
+    "/terms-of-services":{
+      "name":"terms",
+      "title":"Terms & Conditions of services - CryTech Mining - CRY Token",
+      "description":"We are CryTech (crytech.trade -AKA website- domains and subdomains) You are the user. Services are anything we provide. Laws are the terms of using services",
+      "image":"https://mining.crytech.trade/img/HeaderLogo-shrink.svg",
+      "imagetype":"image/svg",
+      "keywords":"",
+      "transparentNavBar": true
+    },
+    "/contact":{
+      "name":"contact",
+      "title":"Contact Us - Crytech Mining - CRY token",
+      "description":"Contact Crytech Mining via twitter, telegram, facebook, instagram, email and contact form",
+      "image":"https://mining.crytech.trade/img/HeaderLogo-shrink.svg",
+      "imagetype":"image/svg",
+      "keywords":"",
+      "transparentNavBar": true
+    },
+    "/faq":{
+      "name":"faq",
+      "title":"Frequently Asked Questions - CryTech Mining - CRY token",
+      "description":"Frequently asked questions about Crytech Mining. Electricity Costs, Forever hashpower, Network Dificulty, Payout Methods and etc.",
+      "image":"https://mining.crytech.trade/img/HeaderLogo-shrink.svg",
+      "imagetype":"image/svg",
+      "keywords":""
+    }
+  }
+}

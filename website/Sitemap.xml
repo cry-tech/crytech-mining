@@ -6,7 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mining.crytech.trade/About.html</loc>
+    <loc>https://mining.crytech.trade/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://mining.crytech.trade/about</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -16,17 +21,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mining.crytech.trade/Contact.html</loc>
+    <loc>https://mining.crytech.trade/contact</loc>
     <changefreq>daily</changefreq>
     <priority>0.07</priority>
   </url>
   <url>
-    <loc>https://mining.crytech.trade/FAQ.html</loc>
+    <loc>https://mining.crytech.trade/faq</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mining.crytech.trade/Terms.html</loc>
+    <loc>https://mining.crytech.trade/terms</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,0 +1,133 @@
+<!--========== Title Promo ==========-->
+<section
+  class="container-fluid s-bg-contact--xs items g-padding-x-10--xs g-padding-x-35--sm g-padding-y-80--md g-padding-y-50--xs"
+  id="js-scene">
+
+  <div class="items__inner">
+    <img src="img/Contact/contact-d1.svg" class="s-promo-d1 layer wow slideInDown" data-depth="0.2" data-title="no.1">
+    <img src="img/Contact/contact-d2.svg" class="s-promo-d2 layer wow slideInDown" data-depth="0.1" data-title="no.2"
+      data-wow-delay="0.3s" data-wow-duration="1200ms">
+    <img src="img/Contact/contact-d3.svg" class="s-promo-d1 hidden-md hidden-lg layer wow slideInDown" data-depth="0.2"
+      data-title="no.3">
+    <img src="img/Contact/contact-d4.svg" class="s-promo-d2 hidden-md hidden-lg layer wow slideInDown" data-depth="0.1"
+      data-title="no.4" data-wow-delay="0.3s" data-wow-duration="1200ms">
+  </div>
+
+  <div class="row text-center g-padding-y-100--lg g-padding-y-40--xs g-padding-x-100--lg">
+    <div
+      class='col-xs-12 col-sm-5 col-lg-6 g-margin-b-10--xs g-padding-x-40--xs g-padding-x-20--sm g-padding-x-15--md wow fadeIn'
+      data-wow-delay='0.1s' style="z-index: 5;">
+      <img src="img/Contact/contact.png" class="img-responsive">
+    </div>
+    <div class='col-xs-12 col-sm-7 col-lg-6 text-left g-margin-b-10--xs wow fadeIn' data-wow-delay='0.1s'>
+      <div class="g-margin-t-80--lg wow fadeIn" data-wow-delay="1s">
+        <h1
+          class="g-font-weight--700 g-margin-b-10--xs g-color--white g-font-size-26--xs g-font-size-40--md g-font-size-50--lg">
+          Contact Us</h1>
+        <p class="g-color--white g-font-size-22--lg g-font-size-18--md">Crytech is where we belong, we are
+          always available !</p>
+        <div class="g-margin-b-20--xs">
+          <div class="g-display-inline-block--md">
+            <a class="s-social-btn g-margin-b-10--xs g-margin-r-40--md g-margin-r-60--xs" href="https://www.youtube.com/channel/UC7t8pLWJSEelWPN11EOWy0Q" target="_blank"><i
+                class="fab fa-youtube g-margin-r-10--xs"></i>Youtube</a>
+            <a class="s-social-btn g-margin-b-10--xs g-margin-r-40--md"
+              href="https://www.linkedin.com/company/cry-tech/" target="_blank"><i
+                class="fab fa-linkedin g-margin-r-10--xs"></i>linkedin</a>
+          </div>
+          <div class="g-display-inline-block--md">
+            <a class="s-social-btn g-margin-b-10--xs g-margin-r-40--md g-margin-r-60--xs"
+              href="https://twitter.com/crytechmining" target="_blank"><i
+                class="fab fa-twitter g-margin-r-10--xs"></i>Twitter</a>
+            <a class="s-social-btn g-margin-b-10--xs" href="https://t.me/CrytechMining" target="_blank"><i
+                class="fab fa-telegram g-margin-r-10--xs"></i>Telegram</a>
+          </div>
+        </div>
+        <p class="g-color--white g-font-size-22--lg g-font-size-18--md"><i
+            class="fal fa-envelope g-margin-r-10--xs"></i>Our Contact mail address :
+          <a href="mailto:info@crytech.trade" class="s-social-btn">info@crytech.trade</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========== END Title Promo ==========-->
+
+<!--========== PAGE CONTENT ==========-->
+<section class="container g-padding-y-30--xs g-margin-b-50--xs wow fadeIn" data-wow-delay='0.9s'>
+  <div class="row text-center">
+    <h2
+      class="s-cry-title g-font-size-26--xs g-font-size-34--sm g-display-inline-block--xs g-margin-b-30--xs g-font-weight--700">
+      Send Us your message</h2>
+    <form id="Form" name="Form" method="POST" action="/Contact.html">
+      <div class="col-xs-12 col-sm-6 g-margin-b-20--xs">
+        <input type="text" class="form-control g-font-size-16--xs s-form-v4__input" name="Name" id="Name"
+          placeholder="* Name">
+      </div>
+      <div class="col-xs-12 col-sm-6 g-margin-b-20--xs">
+        <input type="email" class="form-control g-font-size-16--xs s-form-v4__input" name="Email" id="Email"
+          placeholder="* Email">
+      </div>
+      <div class="col-xs-12 g-margin-b-40--xs">
+        <textarea class="form-control g-font-size-16--xs s-form-v4__input g-padding-y-20--xs" rows="3" name="Message"
+          id="Message" placeholder="* Your Message"></textarea>
+      </div>
+      <div class="g-text-center--xs">
+        <button type="submit"
+          class="s-btn s-btn--primary-bg g-z-index--2 g-position--relative g-padding-y-5--xs g-radius--50 g-padding-x-80--xs">Send</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!--========== END PAGE CONTENT ==========-->
+
+{{#contentFor "scripts"}}
+<script src="vendor/jquery.wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+<script src="js/components/wow.min.js"></script>
+<script src="vendor/jquery.validate.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#Form').validate({
+      rules: {
+        Name: {
+          required: true
+        },
+        Email: {
+          required: true,
+          email: true
+        },
+        Message: {
+          required: true
+        }
+      },
+      messages: {
+        Name: "Please fill this field",
+        Email: {
+          required: "Please enter your email",
+          email: "please enter a valid email (with use of @)"
+        },
+        Message: "Please fill this field",
+      },
+      submitHandler: function (form) {
+        $.ajax({
+          type: 'POST',
+          url: "/contact",
+          contentType: "application/json",
+          data: JSON.stringify({
+            "email": $("#Email").val(),
+            "name": $("#Name").val(),
+            "message": $("#Message").val()
+          }),
+          success: function (result) {
+            alert(result);
+          }
+        })
+
+      }
+    });
+  });
+</script>
+<script>
+  var scene = document.getElementById('js-scene');
+  var Parallax = new Parallax(scene);
+</script>
+{{/contentFor}}

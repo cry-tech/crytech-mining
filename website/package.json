@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
+    "express-hbs": "^2.3.0",
+    "handlebars": "^4.5.3",
     "request": "^2.88.0",
     "save": "^2.4.0"
   },
