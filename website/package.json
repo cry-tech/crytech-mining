@@ -6,6 +6,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-hbs": "^2.3.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-terser": "^1.2.0",
     "handlebars": "^4.5.3",
     "request": "^2.88.0",
     "save": "^2.4.0"

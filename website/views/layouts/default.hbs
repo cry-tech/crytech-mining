@@ -13,16 +13,18 @@
   <meta property="og:site_name" content="Crytech Mining" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{description}}" />
-  <meta property="og:image" content="https://mining.crytech.trade/img/HeaderLogo-shrink.svg" />
-  <meta property="og:image:type" content="image/png" />
-  <!-- Vendor Styles -->
+  <meta property="og:image" content="{{image}}" />
+  <meta property="og:image:type" content="{{imagetype}}" />
+  {{!-- <!-- Vendor Styles -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="/css/animate.css" rel="stylesheet" type="text/css" />
   <!-- Theme Styles -->
   <link href="/css/style.css" rel="stylesheet" type="text/css" />
   <link href="/css/global/global.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="/css/font-awesome-5.css">
-  <link href="/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" />
+  <link href="/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet" /> --}}
+
+  <link rel="stylesheet" href="/dist/layout.min.css">
 
   {{{block "head"}}}
 
@@ -239,10 +241,13 @@
   </footer>
   <!--========== END FOOTER ==========-->
 
+  {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="/vendor/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
-  <script src="/js/components/header-sticky.js"></script>
+  <script src="/js/components/header-sticky.js"></script> --}}
+
+  <script src="/dist/layout.min.js"></script>
 
   {{{block "scripts"}}}
 
