@@ -40,32 +40,32 @@
     item.profitPercentage = Math.round(item.AssetPlustProfit / investAmount * 100) - 100;
   }
 
-  var minePerTerahash = 0.00001952; // Mining amount per Thash per day
-  var btcPrice = 8900.63;
+  var minePerTerahash = 0.00000881; // Mining amount per Thash per day
+  var btcPrice = 9500.63;
   var investAmount = 1000;
   var bonus = 20 / 100; // bonus percentage in ICO Phase
 
   var comparisionList = [{
     id: "crytech",
     name: "CryTech Mining",
-    MaintenanceCost: 0.13, // Maintenance cost per Thash per Day
-    HashratePrice: 40, // Price per THash
+    MaintenanceCost: 0.065, // Maintenance cost per Thash per Day
+    HashratePrice: 33, // Price per THash
     contractTime: 0, // contract duration in months. 0 means unlimited
     profitShare: 0.5
   },
   {
     id: "crytechBonus",
     name: "CryTech Mining with bonus",
-    MaintenanceCost: 0.13,
-    HashratePrice: 33.33,
+    MaintenanceCost: 0.065,
+    HashratePrice: 26,
     contractTime: 0,
     profitShare: 0.5
   },
   {
     id: "crytechBonusCry",
     name: "CryTech mining with bonus. Payment in CRY token",
-    MaintenanceCost: 0.13,
-    HashratePrice: 33.33,
+    MaintenanceCost: 0.065,
+    HashratePrice: 26,
     contractTime: 0,
     profitShare: 0.5
   }, {
@@ -79,9 +79,9 @@
   {
     id: "genesisMining",
     name: "Genesis Mining",
-    MaintenanceCost: 0.15,
-    HashratePrice: 41.7,
-    contractTime: 21,
+    MaintenanceCost: 0,
+    HashratePrice: 75.01,
+    contractTime: 24,
     profitShare: 1
   },
   {
